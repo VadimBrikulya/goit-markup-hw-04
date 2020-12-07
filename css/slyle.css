@@ -140,9 +140,6 @@ p {
 
 .address-list {
   display: flex;
-}
-
-.container-address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -153,6 +150,8 @@ p {
 /* ------------ параметры шрифта номер + имеил ------------------*/
 .header-tel,
 .header-mail {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -161,7 +160,10 @@ p {
   text-decoration: none;
   color: #757575;
 }
-
+.tel-icon,
+.email-icon {
+  margin-right: 10px;
+}
 /*---------------BLOCK II------------------*/
 
 /*---------------HERO -----------------------
