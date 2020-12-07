@@ -117,7 +117,9 @@ p {
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .header-mail:hover,
-.header-mail:focus {
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
   color: var(--accent-color);
 }
 
@@ -140,8 +142,8 @@ p {
 
 .address-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .address-list .header-mail {
@@ -221,6 +223,16 @@ p {
 
 /*-------chart список---------------*/
 
+.thumb-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
+  border-radius: 4px;
+}
+
 .otstup-sekcii {
   padding-top: 94px;
 }
@@ -284,6 +296,12 @@ p {
 }
 
 /*---------- Our team ------------*/
+
+.icon-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
 
 .our-team {
   padding-top: 94px;
@@ -352,6 +370,7 @@ p {
 .footer-address {
   display: flex;
   flex-direction: column;
+
   /* border: 1px solid teal; */
 }
 
@@ -360,8 +379,7 @@ p {
 }
 
 .footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
+  margin-top: 60px;
   color: #ffffff;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -377,7 +395,6 @@ p {
 }
 
 .address-link {
-  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -387,6 +404,7 @@ p {
 }
 
 .contact-list-link {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
