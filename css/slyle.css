@@ -14,6 +14,7 @@ html {
   --main-font: 'Roboto', sans-serif;
   --second-bg-color: #f5f4fa;
   --gradient-color: rgba(47, 48, 58, 0.4);
+  --logo-client: #afb1b8;
 }
 body {
   font-family: var(--main-font);
@@ -47,7 +48,8 @@ p {
 
 .header-width {
   width: 1170px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -170,6 +172,8 @@ p {
 /*---------------BLOCK II------------------*/
 
 /*---------------HERO -----------------------
+
+
 ----------------------фон текста----------------*/
 .hero {
   background-color: #2f303a;
@@ -411,6 +415,47 @@ p {
 }
 
 .list-icon {
+  fill: currentColor;
+}
+
+/* ------------------наши клиенты------------------------- */
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-box {
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: var(--logo-client);
+  border: 1px solid var(--logo-client);
+  border-radius: 4px;
+}
+
+.client-list:hover,
+.client-list:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.client-icon {
   fill: currentColor;
 }
 
