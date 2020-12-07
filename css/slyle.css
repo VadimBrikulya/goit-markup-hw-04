@@ -13,6 +13,7 @@ html {
   --secondary-color: #212121;
   --main-font: 'Roboto', sans-serif;
   --second-bg-color: #f5f4fa;
+  --gradient-color: rgba(47, 48, 58, 0.4);
 }
 body {
   font-family: var(--main-font);
@@ -172,16 +173,29 @@ p {
 ----------------------фон текста----------------*/
 .hero {
   background-color: #2f303a;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  text-align: center;
+  background-image: linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*---------------параметры шрифта текста-------------------*/
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
