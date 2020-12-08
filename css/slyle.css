@@ -145,8 +145,8 @@ p {
 
 .address-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .address-list .header-mail {
@@ -512,8 +512,15 @@ p {
 }
 
 /* -----------------футер социальные сети--------------------- */
+
+.footer-box {
+  display: flex;
+}
+
 .footer-social {
   width: 206px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -531,12 +538,13 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   background-color: rgba(255, 255, 255, 0.1);
-
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
+.footer-social {
+  padding-left: 70px;
+}
 .footer-social-box {
   margin-bottom: 20px;
   color: #ffffff;
@@ -544,6 +552,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
 }
+
 /* ----------- Portfolio----------------- */
 
 .indent {
@@ -563,13 +572,11 @@ p {
   margin-right: 8px;
   padding: 6px 22px;
   min-width: 73px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-
   cursor: pointer;
 }
 
