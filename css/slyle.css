@@ -145,8 +145,8 @@ p {
 
 .address-list {
   display: flex;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .address-list .header-mail {
@@ -467,12 +467,14 @@ p {
 .footer-address {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 
   /* border: 1px solid teal; */
 }
 
 .footer-address .contact-list:not(:last-child) {
   margin-bottom: 9px;
+  margin-top: 9px;
 }
 
 .footer-logo {
@@ -501,7 +503,6 @@ p {
 }
 
 .contact-list-link {
-  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -551,6 +552,14 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ----------- Portfolio----------------- */
