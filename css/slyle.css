@@ -619,31 +619,29 @@ p {
   width: 100%;
   display: flex;
 }
-/* ------------текст в изображении--------------------- */
+/* ------------текст технокряк в изображении--------------------- */
 
 .image-thumb {
   position: relative;
+  overflow: hidden;
 }
 
-.item-chart:hover .bg-text {
-  opacity: 1;
+.image-thumb:hover .bg-text {
+  transform: translateY(0%);
 }
 
 .bg-text {
-  display: inline-block;
   position: absolute;
-  content: '';
   margin: 0;
   padding: 63px 24px;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  transform: translate(-50%, -50%);
   background: rgba(33, 150, 243, 0.9);
-  opacity: 0;
+  transition: transform 500ms linear;
+  transform: translateY(100%);
 }
-
 .item-text {
   color: #ffffff;
   font-family: var(--accent-color);
@@ -664,7 +662,7 @@ p {
   cursor: pointer;
 }
 
-.item-chart h2 {
+.title {
   font-family: var(--accent-color);
   font-weight: bold;
   font-size: 18px;
